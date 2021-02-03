@@ -1,0 +1,83 @@
+<html>
+    <head>
+    
+        <link rel="stylesheet" type="text/css" href="/public/css/signup.css">
+        <script src="https://kit.fontawesome.com/a43c0f77ad.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <div class ="container">
+    <div class="header">
+        <h2>Mark Entry Sheet</h2>
+   </div>
+   
+    <form class="form" action='/entry' id="form" method="POST">
+    <table>
+    <tr>
+            <td>Name: </td><td>
+            <div class="form-control">
+            <input type="text" placeholder="Name" id="username" name="username">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small></td>
+        </div>
+    </tr>
+    <tr>
+        
+            <td>Rollno:</td>
+            <td><div class="form-control">
+            <input type="text" placeholder="Rollno" id="rollnumber" name="rollnumber">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small></td>
+        </div>
+    </tr>
+    <tr>
+       
+            <td>Date of Exam:</td>
+            <td><div class="form-control">
+            <input type="date" placeholder="mm/dd/yyyy" id="date" name="date">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small></td>
+        </div>
+    </tr>
+    <tr>
+       
+            <td>Subject 1 Mark:</td>
+            <td> <div class="form-control">
+            <input type="text" placeholder="Subject 1 Mark" id="sub1" name="mark1">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small></td>
+        </div>
+    </tr>
+    <tr>
+       
+            <td>Subject 2 Mark:</td>
+            <td> <div class="form-control">
+            <input type="text" placeholder="Subject 2 Mark" id="sub2" name="mark2">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small></td>
+        </div>
+    </tr>
+    <tr>
+        <div class="form-control">
+            <td>Subject 3 Mark:</td>
+            <td> <div class="form-control">
+            <input type="text" placeholder="Subject 3 Mark" id="sub3" name="mark3">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small></td>
+        </div>
+    </tr>
+   
+    
+</table> 
+<button>Submit</button>        
+ </form> 
+
+</div>
+<script src="/public/js/admin_marksheet entry.js"></script>
+</body>
+</html>

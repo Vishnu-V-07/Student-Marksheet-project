@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/public/css/table.css">  
+</head>
+<body>
+    <div class ="container">
+        <div class="header">
+            <h2 style="text-align:center">STUDENT MARKSHEET</h2>
+        </div>
+    <form class="form" action="/views/login.html" id="form">
+    <table>
+        <tr>
+            <th>Si.no</th>
+            <th>Rollnum</th>
+            <th>Student Name</th>
+            <th>Email</th>
+            <th>Test 1</th>
+            <th>Test 2</th>
+            <th>Test 3</th>
+            <th>Average Score</th>
+        </tr>
+        <% if(userdata.length!=0){ %>
+            <% userdata.forEach((data)=> { %>
+                <% var i=1; %>
+                <tr>
+                <td><%= i; %></td>
+                <td><%=data.rollnum %></td>
+                <td><%=data.username %></td>
+                <td><%=data.email %></td>
+                <td><%=data.mark1 %></td>
+                <td><%=data.mark2 %></td>
+                <td><%=data.mark3 %></td>
+                <td><%= Math.round((data.mark1 + data.mark2 +data.mark3)/3) %></td>
+
+                </tr>
+                <% i++; %>
+           <% }) %>
+
+
+        <% } else{ %>
+        <tr>
+            <td colspan="9">No data found</td>
+        </tr>
+    <% } %>
+    </table>
+    <br>
+    <center>
+    <button>LOGOUT</button>
+    </center>
+    </form>
+    </div>
+</body>
+</html>

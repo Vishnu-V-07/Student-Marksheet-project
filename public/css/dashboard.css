@@ -1,0 +1,40 @@
+body{
+    background-image:url("https://images.pexels.com/photos/1042423/pexels-photo-1042423.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-color:#9b59b6;
+    
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+    margin:0;
+}
+.container{
+    background-color:#f7f7f7;
+    box-shadow:0 2px 5px (0,0,0,3);
+    overflow:hidden;
+    width:400px;
+    max-width:100%;
+    border-radius:20px;
+    box-shadow :5px 10px 20px lightgray inset;
+}
+.header {
+    padding:20px 40px;
+    /*background-color:#f7f7f7;
+    border-bottom:1px solid #f0f0f0;*/
+}
+.button{
+    background-color:#8e44ad;
+    border:2px solid #8e44ad;
+    color:#fff;
+    display:block;
+    border-radius:5px;
+    font-family:inherit;
+    font-size:16px;
+    padding:10px;
+    width:45%;
+    text-decoration:none;
+    text-align:center;
+}
+    

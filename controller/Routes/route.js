@@ -84,5 +84,9 @@ router.use('/entry',function(req,res){
         }
     })
 })
+router.get('/dashboard',function(req,res){
+    console.log("Welcome");
+    res.render("Dashboard");
+})
 
 module.exports=router;

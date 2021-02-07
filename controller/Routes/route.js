@@ -88,5 +88,25 @@ router.get('/dashboard',function(req,res){
     console.log("Welcome");
     res.render("Dashboard");
 })
+router.get('/admin_dashboard',function(req,res){
+    console.log("Welcome to admin dashboard page ");
+    res.render("admin_dashboard");
+})
+router.get('/admin_login',function(req,res){
+    console.log("Welcome to admin login page ");
+    res.render("admin_login");
+})
+router.get('/admin_signup',function(req,res){
+    console.log("Welcome to admin signup page ");
+    res.render("admin_signup");
+})
+router.get('/student_dashboard',function(req,res){
+    console.log("Welcome to student dashboard page ");
+    res.render("student_dashboard");
+})
+router.get('/forgotpassword',function(req,res){
+    console.log("Welcome to forgot password page ");
+    res.render("Forgotpassword");
+})
 
 module.exports=router;
